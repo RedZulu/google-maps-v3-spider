@@ -1,6 +1,8 @@
    ////////////////////////
   // custom map spider //
  ///////////////////////
+  function isOdd(num) { return num % 2;}
+
   map.addListener('bounds_changed', function() {
     var latMedian = [];
     var lngMedian = [];
