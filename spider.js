@@ -19,6 +19,8 @@
         totalMedian.push(currentMarkers[i]);
       }
     }
+     
+    //12 is the cutoff for minimum number of markers in the current viewport needed to render the spider 
     if(map.getZoom() === 20 && totalMedian.length > 12){
       latMedian.sort(function(a, b) {
         var aLat = a.getPosition().lat();
